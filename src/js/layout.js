@@ -6,6 +6,8 @@ import { Home } from "./views/home";
 import { Single } from "./views/single";
 import { Contacts } from "./views/Contacts";
 import { AddContactsForm } from "./views/AddContactsForm";
+import { EditContacts } from "./views/EditContacts";
+
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -25,9 +27,9 @@ const Layout = () => {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/single/:theid" element={<Single />} />
-						<Route path="/contacts" element={<Contacts/>}/>
 						<Route path="/add-contacts" element={<AddContactsForm/>}/>
-						<Route path="*" element={<h1>Not found!</h1>} />
+						<Route path="/edit-contacts/:id" element ={<EditContacts/>}/>
+						<Route path="*" element={<h1 className="alert alert-warning text-center">La página que buscas no existe. Revisa la dirección.</h1>} />
 					</Routes>
 					<Footer />
 				</ScrollToTop>
