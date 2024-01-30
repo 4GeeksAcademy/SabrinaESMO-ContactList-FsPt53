@@ -4,7 +4,6 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { Single } from "./views/single";
-import { Contacts } from "./views/Contacts";
 import { AddContactsForm } from "./views/AddContactsForm";
 import { EditContacts } from "./views/EditContacts";
 
