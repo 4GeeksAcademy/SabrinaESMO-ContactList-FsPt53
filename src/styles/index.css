@@ -11,8 +11,8 @@ ul {
     border: solid #c2c1c1;
     border-width: 0.5px;
     border-radius: 5px;
-    max-width: 1020px;
     padding: 10px;
+    max-width: 1020px;
 }
 
 .formInput{
@@ -27,22 +27,18 @@ ul {
     font-size: 22px;
     font-weight:bold;
     margin-bottom:7px;
-
 }
 
 .addressBox{
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
-    margin:0px;
     color:grey;
 }
 
 .phoneBox{
     font-family: 'Dosis', sans-serif;
     font-size: 18px;
-    margin:0%;
     color:grey;
-
 }
 
 .emailBox{
@@ -57,14 +53,14 @@ ul {
     border-radius: 5px;
     padding: 16px;
     margin: 5%;
-   }
+}
    
-   .btn-contact:hover, .btn-create:hover, .btn-add:hover {
+.btn-contact:hover, .btn-create:hover, .btn-add:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-   }
+}
 
-   .btn-add{
+.btn-add{
     width: fit-content;
     background-color: #32e9d4;
     color: white;
@@ -76,9 +72,9 @@ ul {
     padding: 10px;
     margin: 10px;
     margin-bottom: 20px;
-   }
+}
 
-   .btn-create{
+.btn-create{
     width: 100%;
     background-color: #32e9d4;
     color: white;
@@ -88,6 +84,5 @@ ul {
     border: none;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
-   }
+}
    

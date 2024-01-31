@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "../../styles/home.css";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
-import Fotito from "../../img/rigo-baby.jpg"
+import Fotito from "../../img/Leyzul.png"
 
 export const Contacts = () => {
 
@@ -24,7 +24,7 @@ export const Contacts = () => {
                                     <div className="contactBox container">
                                         <div className="row">
                                             <div className="col">
-                                                <img src={Fotito} className=" rounded-circle img-thumbnail"/>
+                                                <img src={Fotito} className="rounded-circle img-thumbnail" />
                                             </div>
                                             <div className="col-8">
                                                 <p className="nameBox">{element.full_name}</p>
@@ -33,8 +33,8 @@ export const Contacts = () => {
                                                 <p className="emailBox"><i className="info-icon fa-solid fa-at"></i>{element.email} </p>
                                             </div>
                                             <div className="col">
-                                                <button className="btn-contact" onClick={() => {navigate(`/edit-contacts/${element.id}`)}}><i className="fa-solid fa-user-pen"></i></button>
-                                                <button className="btn-contact" onClick={() => {deleteContact(element.id)}}><i className="fa-solid fa-user-slash"></i></button>
+                                                <button className="btn-contact" onClick={() => { navigate(`/edit-contacts/${element.id}`) }}><i className="fa-solid fa-user-pen"></i></button>
+                                                <button className="btn-contact" onClick={() => { deleteContact(element.id) }}><i className="fa-solid fa-user-slash"></i></button>
                                             </div>
                                         </div>
                                     </div>
