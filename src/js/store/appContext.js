@@ -16,7 +16,7 @@ const injectContext = PassedComponent => {
 				setStore: updatedStore =>
 					setState({
 						store: Object.assign(state.store, updatedStore),
-						actions: { ...state.actions }
+						actions: {...state.actions}
 					})
 			})
 		);
@@ -24,7 +24,8 @@ const injectContext = PassedComponent => {
 		useEffect(() => {
 			const { actions } = state;
 			actions.getAllContacts();
-		}, []);
+		}, [state.store.contacts.length]
+		);
 
 		return (
 			<Context.Provider value={state}>

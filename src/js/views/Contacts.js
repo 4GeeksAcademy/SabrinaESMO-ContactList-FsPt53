@@ -33,8 +33,8 @@ export const Contacts = () => {
                                                 <p className="emailBox"><i className="info-icon fa-solid fa-at"></i>{element.email} </p>
                                             </div>
                                             <div className="col">
-                                                <button className="btn-contact" onClick={() => {navigate(`edit-contacts/${element.id}`)}}><i className="fa-solid fa-user-pen"></i></button>
-                                                <button className="btn-contact" onClick={() => {deleteContact(element.id);}}><i className="fa-solid fa-user-slash"></i></button>
+                                                <button className="btn-contact" onClick={() => {navigate(`/edit-contacts/${element.id}`)}}><i className="fa-solid fa-user-pen"></i></button>
+                                                <button className="btn-contact" onClick={() => {deleteContact(element.id)}}><i className="fa-solid fa-user-slash"></i></button>
                                             </div>
                                         </div>
                                     </div>

@@ -10,14 +10,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(data => setStore({contacts:data}));
 			},
 
-			createContact: (contact) => {
-				fetch(`https://playground.4geeks.com/apis/fake/contact/`,{
+			createContact: async (contact) => {
+				await fetch(`https://playground.4geeks.com/apis/fake/contact/`, {
 					method: 'POST',
 					headers: {
-						'Content-type':'application/json'
+						'Content-type': 'application/json'
 					},
 					body: JSON.stringify(contact)
-				})
+				});
+				return getActions.getAllContacts();
 			},
 
 			updateContact: (contact, id) => { 

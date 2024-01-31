@@ -43,19 +43,19 @@ export const EditContacts = () => {
 	<div className="text-center mt-5 container position-relative">
 		<h1>Modifica los datos del contacto</h1>
 		<div className="mb-3 formInput container row">
-			<label for="exampleFormControlInput1" className="form-label col-auto">Nombre completo</label>
+			<label htmlFor="exampleFormControlInput1" className="form-label col-auto">Nombre completo</label>
 			<input value={name} onChange={e => setName(e.target.value)} type="text" className="form-control col-auto" id="exampleFormControlInput1" ></input>
 		</div>
 		<div className="mb-3 formInput container row">
-			<label for="exampleFormControlInput2" className="form-label col-auto">Correo electrónico</label>
+			<label htmlFor="exampleFormControlInput2" className="form-label col-auto">Correo electrónico</label>
 			<input value={email} onChange={e => setEmail(e.target.value)} type="text" className="form-control col-auto" id="exampleFormControlInput2" ></input>
 		</div>
 		<div className="mb-3 formInput container row">
-			<label for="exampleFormControlInput3" className="form-label col-auto">Número de teléfono</label>
+			<label htmlFor="exampleFormControlInput3" className="form-label col-auto">Número de teléfono</label>
 			<input value={phone} onChange={e => setPhone(e.target.value)} type="text"  className="form-control col-auto" id="exampleFormControlInput3" ></input>
 		</div>
 		<div className="mb-3 formInput container row">
-			<label for="exampleFormControlInput4" className="form-label col-auto">Dirección</label>
+			<label htmlFor="exampleFormControlInput4" className="form-label col-auto">Dirección</label>
 			<input value={address} onChange={e => setAddress(e.target.value)} type="text"className="form-control col-auto" id="exampleFormControlInput4" ></input>
 		</div>
 		<button onClick={updateContact} type="button" className="btn btn-create">Actualizar contacto</button>

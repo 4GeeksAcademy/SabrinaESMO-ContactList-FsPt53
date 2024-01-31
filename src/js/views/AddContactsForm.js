@@ -14,8 +14,8 @@ export const AddContactsForm = () => {
 
 	const navigate = useNavigate();
 
-	const createContact = () => {
-		actions.addContact(
+	const createContact = async () => {
+		await actions.addContact(
 			{
 				"full_name": name,
 				"email": email,
@@ -24,7 +24,7 @@ export const AddContactsForm = () => {
 				"phone": phone,
 			})
 
-		navigate("/")
+		return navigate("/")
 	}
 
 	return (
@@ -46,12 +46,10 @@ export const AddContactsForm = () => {
 				<label for="exampleFormControlInput4" className="form-label col-auto">Dirección</label>
 				<input value={address} onChange={e => setAddress(e.target.value)} type="text" className="form-control col-auto" id="exampleFormControlInput4" placeholder="Avenida Arboleda Colorida nº147"></input>
 			</div>
-			<button onClick={createContact} type="button" className="btn btn-create">Crear contacto</button>
+			<button className="btn btn-create " onClick={createContact} type="button">Crear contacto</button>
 			<nav className="ms-4 position-absolute start-0">
 				<Link to="/">Volver al inicio</Link>
 			</nav>
 		</div>
-
-
 	);
 };
